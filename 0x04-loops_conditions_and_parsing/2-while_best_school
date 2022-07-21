@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#print 10 line using while loop
+
+c=0
+while [ $c -lt 10 ]
+do
+	echo "Best School"
+	c=$(( c + 1 )) 
+done
