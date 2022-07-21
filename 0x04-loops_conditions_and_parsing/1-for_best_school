@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#this is to print 10 lines
+for ((c=0;c<10;c++))
+do
+	echo "Best School"
+done
