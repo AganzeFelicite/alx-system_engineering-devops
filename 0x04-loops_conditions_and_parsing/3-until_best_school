@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#unil bash
+c=0
+until [ "$c" -eq 10 ]
+do
+	echo "Best School"
+	c=$(( c + 1))
+done
+
+
