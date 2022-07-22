@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#bad luck form china on 4,bad luck from japan on 9, bad luck from italy on 17
+
+c=1
+while [ "$c" -ne 21 ]
+do
+	case $c in 
+		4)
+		echo $c
+		echo "bad luck from china";;
+		9)
+		echo $c
+		echo "bad luck from Japan";;
+		17)
+		echo $c
+		echo "bad luck from Italy";;
+		*)
+		echo $c;;
+	esac
+	c=$((c + 1))
+done	
+
