@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#this is to print the PD and the name of the process
+
+pgrep -l "bash" 
