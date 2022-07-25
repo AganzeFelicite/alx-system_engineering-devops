@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-file="apache-access(2).log"
-awk '{print $1,$9}' $file
+awk '{print $1,$9}' apache-access.log
