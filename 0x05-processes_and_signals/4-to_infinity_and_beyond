@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#this is the forthtask
+
+while true
+do
+	echo "To infinity and beyong"
+done
