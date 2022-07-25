@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#this is to display numbers from 1 to 100
+
+NUMBER=1
+until [ $NUMBER -eq 101 ]
+do
+	if [ $((NUMBER%15)) = 0 ]
+        then
+                echo "FizzBuzz"
+
+	elif [ $((NUMBER%3)) = 0 ]
+	then
+		echo "Fizz"
+	elif [ $((NUMBER%5)) = 0 ]
+	then
+		echo "Buzz"
+	else
+		echo $((NUMBER))
+	fi
+	NUMBER=$((NUMBER+1))
+done
+
+
