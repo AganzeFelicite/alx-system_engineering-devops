@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#stop the infinity process not using kill and killall
+pkill -f 7-highlander
