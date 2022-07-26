@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#stop the infinity process not using kill and killall
+pkill -f 4-to_infinity_and_beyond
+
