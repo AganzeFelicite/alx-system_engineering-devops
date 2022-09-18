@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-ssh ubuntu@3.236.108.24
+#connects my pc to the server
 
+ssh ubuntu@3.236.108.24
