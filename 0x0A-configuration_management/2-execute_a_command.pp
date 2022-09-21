@@ -1,4 +1,4 @@
 #end a running process
-  exec { 'killing it':
-  command  => '/bin/pkill killlmenow',
+  exec { 'killmenow process':
+  command  => '/bin/pkill killmenow',
   }
