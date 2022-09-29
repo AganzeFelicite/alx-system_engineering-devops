@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+#this is to ping an ip address
+
+if [ -n "$1" ];
+then
+	ping "$1"
+else
+	echo "$0 {IP_ADDRESS}"
+fi
