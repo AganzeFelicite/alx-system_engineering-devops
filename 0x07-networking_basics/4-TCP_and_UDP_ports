@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this a to show all listen ports and the services
+netstat -ap
