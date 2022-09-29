@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#this script to change the host names
+touch ~/file1.new
+cp /etc/hosts ~/file1.new
+sed  -i 's/127.*$/127.0.0.2 localhost\n8.8.8.8 facebook.com/' ~/file1.new
+echo "$(cat ~/file1.new)" >> /etc/hosts
