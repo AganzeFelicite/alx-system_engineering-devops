@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 #this is to ping an ip address
 
 if [ -n "$1" ];
