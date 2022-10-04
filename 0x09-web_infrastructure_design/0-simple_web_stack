@@ -1,0 +1,84 @@
+THE LINK BELLOW HAS THE DIAGRAM OF THE WEB INFRASTRUCTURE
+
+https://drive.google.com/file/d/1ZZ4c7apHP6ukK0Ef_lmw82Bkxk23J7TJ/view?usp=sharing
+
+
+What is a server
+	This a computer device design to store data  process and provides these relevant data to users 
+
+
+
+
+
+What is the role of a domain name
+	
+The domain name in a raw context bridges the gap between human
+and computers. Computer understand numbers(binary) but this
+can be hard for humans who are much more comfortable with words.
+So domain name are purely for humans for the need to remember the
+website instead of numbers. This domain name is then converted to
+numbers(IP Address) by the Domain Name System(DNS) for computers to
+understand.
+A domain name makes it easier to remember the address of a specific computer on the network for human since computer are identify on the network with ip addresses
+
+
+
+What type of DNS record WWW is in www.foobar.com
+	It is a CNAME(carnonical name) DNS record
+
+
+What is the roles of a web server
+	 A web server is a combination of software and hardware that work together to receive and respond to HTTP requests to client also they do  process the requests
+	he web server accepts http request sent from clients.
+The main job of a web server is to display website content through
+storing, processing and delivering webpages to users. Besides HTTP,
+web servers also support SMTP (Simple Mail Transfer Protocol) and FTP
+(File Transfer Protocol), used for email, file transfer and storage.
+This content could be static web pages or dynamically created or it can
+be generated at the time of the request (dynamic content) by another
+program that communicates with the server software.
+
+
+
+What is the role of application Server
+
+	The application server provides business logic behind any application.
+It often serves as the middle man between the web sever and the database
+server. It accepts request from the webserver, collects the information
+need from the datebase, returns it back to the webserver to inturn return
+to the client.
+
+
+What is the role  of database
+	This facilitates the storage and the querrying of the data once requests are recieved from a client machine creating a dynamic web site
+
+
+
+
+What is the server using to communicate with the computer of the user requesting the website
+
+
+There exist an http response and request communication through the TCP/IP
+protocal this assigns ports to servvices being  provided
+The server is using TCP/IP (Transfer Control Protocal /Internet Protocol)
+
+
+
+
+You must be able to explain what the issues are with this infrastructure: 	
+SPOF(Single Point of Failure ) => only one server is setup in case it goes
+of the all system won't work while the client may be in the session
+
+
+Downtime when maintenance needed (like deploying new code web server needs to be restarted)
+
+Also when maintainance is need to be done such such as deploying new code,
+we have a big problem on our hand because the server will need to be restarted
+and this may lead to loss of information for clients who are in session in case they 
+want to request data from the server:
+
+Cannot scale if too much incoming traffic
+Yes since there is no load banlacer if the site is loaded with many clients the web server 
+will be very slow thus creating a waste for the clients 
+
+
