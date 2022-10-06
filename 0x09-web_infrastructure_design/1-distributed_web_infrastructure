@@ -1,0 +1,29 @@
+THE IMAAGE LINK iS here 
+=>>>https://drive.google.com/file/d/17I1dyGSbxvYtl6NSLaxYnuvMDU1RkC0t/view?usp=sharing
+For every additional element, why you are adding it
+
+==> In this web infrastructure two server have been used to improve on the performance instead of relying only on one web server which can b e hard to work with for an increased number of requests
+==> and for that a load balancer has been added to facilate the service accessibility from thre two server upon receiving the requests
+
+2.What distribution algorithm your load balancer is configured with and how it works
+==> A round Robin is used in this web infrastructure it passws its new connection requests to a new sever inline and thus it will be distrob ributing the requests across the two servers evenly.
+the first client to connect is sent to the first server, the second client goes to the second server, the third client goes back to the first server, the fourth client back to the second server, and so on.
+
+3.Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+
+In the above web infrastructure the ACTIVE-ACTIVE setup is used .
+in the active-active setup there is a round robbin in that once the requests are recieved these requests are distributed across the two servers ,all the servers are working at the same time 
+WHILE 
+in the ACTIVE-PASSIVE Setup ,if two servers are used one server is used and the changes on the server are also made on  the failover server . this server only works once the first server goes of and the client sees no difference.
+
+=>In the database primary replica (Master-Slave) cluster, the slave server as the replica and acts as a fallback when the master has issues and stops running. The master is the main database the system use to get and store user information
+
+
+The Primary Node in the application is the main node which the application uses to serve clients and the replica is the not necessary node but present to use as a fallback and to prevent SPOF(Single Point Of Failure)
+
+
+THE SPOF IT IS ON THE ROUND ROBBIN => if it goes off the requests wont be able to be received 
+
+Security issues (there is no firewall ) to monitor and stop incoming conections from unknow networks thus making it insecure also it is supplying http responses wich are not secured at all if a hacker breakes into the connection he will be able to see and still users data 
+
+No monitoring //==> this the are no softwares installed to monitor the disks,cpu,Ram etc performance of the server which is not good for production
