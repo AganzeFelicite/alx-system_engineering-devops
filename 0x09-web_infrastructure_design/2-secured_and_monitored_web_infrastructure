@@ -11,4 +11,4 @@ THREE monitoring clients to monitor the working performances of the different  e
 ==> having all the components on the server (database, sebserver, apllications server
 
 =>>>>Why having servers with all the same components (database, web server and application server) might be a problem??
-==>>
+==>> because all these services running on only one server may decrease the server performance of the server and if a malicious user happens to hack into the server he become a root user of the database and thus can be remove or delete any thing as ge wishes
