@@ -1,0 +1,14 @@
+IMAGE FOR THIS WORK 
+==>>>https://drive.google.com/file/d/1l3sc94DttChSA-4f0Pgs5HNqT93HlnNq/view?usp=sharing
+
+Firewall have been added to basically filter packets and stop connections and requests from unknow network and maliicious accesses
+1SSL certificate has been added inoder to a have http connections that are secured so that the communication may be safer between clients and servers
+THREE monitoring clients to monitor the working performances of the different  equipments basically the round robbin and the two servers on the network.
+==> the monitoring tools reads the different metrics of the servers and the round round robin and alert in case of an usual or a failure or system overloads before to the clients
+==> to monitor the server using a (QPS Querry Per Second ) this can be done making a script to show the status (SHOW STATUS) and also using dedicated  tools
+==> Terminating SSL connection at the load balancer level is still an issue cause a hacker can still find a weakness in the network beyond the load balancer which can profit of it to exploit the user data
+==> only one MySQL server capable to accept writes is an issue because if it crashes the it will be almost as SPOF in that the application won't have were to loacate the data .
+==> having all the components on the server (database, sebserver, apllications server
+
+=>>>>Why having servers with all the same components (database, web server and application server) might be a problem??
+==>>
