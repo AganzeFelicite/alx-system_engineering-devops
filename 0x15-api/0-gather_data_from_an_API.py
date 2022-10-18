@@ -2,9 +2,8 @@
 """this is to get employee is information"""
 
 
-from nturl2path import url2pathname
-from sys import argv
 import requests
+from sys import argv
 
 
 if __name__ == '__main__':
