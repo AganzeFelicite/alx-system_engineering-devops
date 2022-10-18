@@ -17,7 +17,7 @@ if __name__ == '__main__':
     todo = requests.get(url2).json()
     e_name = info.get('username')
     with open('{}.csv'.format(argv[1]), 'w') as new_file:
-        data = csv.writer(new_file)
+        data = csv.writer(new_file, quoting= csv.QUOTE_ALL)
         for row in todo:
             item = [
                 row.get('userId'),
