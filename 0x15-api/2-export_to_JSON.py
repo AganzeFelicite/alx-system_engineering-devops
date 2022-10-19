@@ -2,9 +2,7 @@
 """this is to get employee is information"""
 
 
-from ast import arg
 import json
-from html2text import element_style
 import requests
 from sys import argv
 
