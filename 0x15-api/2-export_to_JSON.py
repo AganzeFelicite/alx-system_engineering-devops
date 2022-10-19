@@ -2,6 +2,7 @@
 """this is to get employee is information"""
 
 
+from ast import arg
 import json
 from html2text import element_style
 import requests
@@ -18,13 +19,10 @@ if __name__ == '__main__':
     data = []
     for row in todo:
         data.append({
-            row.get('userId'): [
-                {
                     "task": row.get('title'),
                     "completed": row.get('completed'),
-                    "username": info.get('username')
-                }
-            ]
-        })
+                    "username": info.get('username'),
+                    })
+    my_dict = {argv[1]: data}
     with open('{}.json'.format(argv[1]), 'w') as new_file:
-        json.dump(data, new_file, indent=4)
+        json.dump(my_dict, new_file)
