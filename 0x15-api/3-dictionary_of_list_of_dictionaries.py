@@ -23,7 +23,7 @@ if __name__ == '__main__':
                     "task": row.get('title'),
                     "completed": row.get('completed')
                     })
-                data.append(a_row)
-                my_dict[row.get('id')] = data
+            data.append(a_row)
+        my_dict[item.get('id')] = data
     with open('todo_all_employees.json', 'w') as new_file:
         json.dump(my_dict, new_file)
