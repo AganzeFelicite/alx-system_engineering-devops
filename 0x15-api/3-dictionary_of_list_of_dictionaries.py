@@ -19,11 +19,11 @@ if __name__ == '__main__':
         for row in todo:
             if item.get('id') == row.get('userId'):
                 a_row = ({
-                    "username": item.get('name'),
+                    "username": item.get('username'),
                     "task": row.get('title'),
                     "completed": row.get('completed')
                     })
                 data.append(a_row)
-            my_dict[row.get('userId')] = data
+        my_dict[item.get('id')] = data
     with open('todo_all_employees.json', 'w') as new_file:
         json.dump(my_dict, new_file)
