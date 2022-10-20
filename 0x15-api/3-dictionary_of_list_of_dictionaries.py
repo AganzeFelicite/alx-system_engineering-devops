@@ -24,6 +24,6 @@ if __name__ == '__main__':
                     "completed": row.get('completed')
                     })
                 data.append(a_row)
-            my_dict[row.get('id')] = data
+                my_dict[row.get('id')] = data
     with open('todo_all_employees.json', 'w') as new_file:
         json.dump(my_dict, new_file)
