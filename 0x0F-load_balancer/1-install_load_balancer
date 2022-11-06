@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#install an haproxy server and configure it 
+apt-get update
+sudo apt-get install haproxy -y
+sudo service haproxy start
+sudo sed -i "/504.http/a \\\n\nfrontend myapp\
+		\\n\t\tmode http\
+		\\n\t\tbind *:80\
+		\\n\t\tdefault_backend myapps\
+		\\n\n\n\backend myapps\
+		\\n\t\t server 17115-web-01 3.236.108.24:80\
+		\\n\t\t server 17115-web-02 100.25.199.209:80" /etc/haproxy/haproxy.cfg 
+sudo service haproxy restart
