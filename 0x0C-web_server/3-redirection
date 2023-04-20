@@ -4,5 +4,4 @@ apt update
 apt install nginx -y
 echo "Hello World!" >> /var/www/html/index.html
 sed -i "/server_name _;/a \\\n\t location /redirect_me {\\n\t return 301  https://www.linkedin.com/in/aganzefelicite2021;\n\t}" /etc/nginx/sites-available/default
-service nginx restart
-
+systemctl nginx restart
