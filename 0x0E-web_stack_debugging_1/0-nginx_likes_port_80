@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-#this is to make nginx to render on port :80
+#this nginx to render on port :80
 file=/etc/nginx/sites-enabled/default
 sed -i 's/8080 default/80 default/' $file
 sudo service nginx restart
+
