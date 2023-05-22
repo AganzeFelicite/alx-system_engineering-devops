@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-apt-get update
-apt-get install nginx
 file=/etc/nginx/sites-enabled/default
 sed -i 's/8080 default/80 default/' $file
 sudo service nginx restart
