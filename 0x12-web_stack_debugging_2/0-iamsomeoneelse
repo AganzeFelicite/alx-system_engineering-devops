@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # this script print the user from the command argumentes.
+
 if [ $# -lt 1 ]
 then
 	echo "Usage ./0-iamsomeoneelse user"
