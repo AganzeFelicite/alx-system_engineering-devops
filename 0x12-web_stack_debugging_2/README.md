@@ -1,4 +1,1 @@
-0x12. Web stack debugging #2
-0x12. Web stack debugging #2
-0x12. Web stack debugging #2
-
+this Runs the whoami command |Under the user passed as argument.
