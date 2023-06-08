@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-#setuptoport:80
-file=/etc/nginx/sites-enabled/default
-sed -i 's/8080 default/80 default/' $file
+#this make the server to post on port :80  in an Ubuntu container.
+sudo rm /etc/nginx/sites-enabled/default
+sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
-
