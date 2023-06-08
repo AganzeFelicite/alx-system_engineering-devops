@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this script print the user from the command argumentes
+sudo -u "$1" whoami
