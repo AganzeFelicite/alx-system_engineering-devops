@@ -6,4 +6,3 @@ then
 else
 	sudo -u "$1" whoami
 fi
-
