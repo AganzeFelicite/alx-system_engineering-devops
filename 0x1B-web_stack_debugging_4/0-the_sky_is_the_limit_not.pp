@@ -2,11 +2,11 @@
 
 exec{'nginx-requests':
   path    => '/usr/local/bin/:/bin/',
-  command => "sed -i /etc/default/nginx -e 's/15/3000/'"
+  command => "sed -i /etc/default/nginx -e 's/15/4000/'"
 }
 exec{'restart-nginx':
 
-  command => 'usr/sbin/servicer nginx restart',
+  command => 'usr/sbin/service nginx restart',
   require => Exec['nginx-requests']
 
 }
