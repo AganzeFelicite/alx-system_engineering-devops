@@ -7,7 +7,7 @@ exec{'nginx-requests':
 exec{'restart-nginx':
 
 command => '/usr/sbin/service nginx restart',
-  require => Exec['nginx-requests']
+require => Exec['nginx-requests']
 
 }
 
