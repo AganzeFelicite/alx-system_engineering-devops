@@ -1,5 +1,5 @@
 POSTMORTEM
-
+![Animated GIF](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/294/pQ9YzVY.gif)
 Issues Summary
 ---------------
 From 6.25 AM to 9.54 AM EAT, requests sent to the website House_Hunting resulted in a 500 error response message. This resulted in most users, typically 90%, experiencing slow service while trying to access our website due to a root cause of traffic overload because of poor configuration of the website infrastructure. Timeline (all times East Africa Time)
