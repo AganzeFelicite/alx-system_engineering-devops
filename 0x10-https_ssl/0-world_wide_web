@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Bash script that will display information about subdomains.
+#Bash script that will display information about subdomains.
 
 print_funct ()
 {
