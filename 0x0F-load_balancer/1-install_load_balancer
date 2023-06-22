@@ -9,5 +9,5 @@ sudo sed -i "/504.http/a \\\n\nfrontend myapp\
 		\\n\t\tdefault_backend myapps\
 		\\n\n\n\backend myapps\
 		\\n\t\t server 17115-web-01  100.25.220.47:80\
-		\\n\t\t server 17115-web-02 35.174.208.205:80" /etc/haproxy/haproxy.cfg 
+		\\n\t\t server 17115-web-02 52.23.213.229:80" /etc/haproxy/haproxy.cfg 
 sudo service haproxy restart
