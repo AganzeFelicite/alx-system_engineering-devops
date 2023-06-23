@@ -17,8 +17,7 @@ global
         ssl-default-bind-ciphersuites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
         ssl-default-bind-options ssl-min-ver TLSv1.2 no-tls-tickets
 
-frontend myapp
-                defaults
+defaults
         log     global
         mode    http
         option  httplog
@@ -32,10 +31,13 @@ frontend myapp
         errorfile 500 /etc/haproxy/errors/500.http
         errorfile 502 /etc/haproxy/errors/502.http
         errorfile 503 /etc/haproxy/errors/503.http
-                                 mode http
-                bind *:80
-                default_backend myapps
+        errorfile 504 /etc/haproxy/errors/504.http
 
-backend myapps
-                 server 17115-web-01  100.25.220.47:80
-                 server 17115-web-02 52.23.213.229
+frontend aganzefelicte07.tech
+        bind 0:80
+        default_backend web_servers
+
+backend web_servers
+        balance roundrobin
+        server 17115-web-01  100.25.220.47:80
+        server 17115-web-02 52.23.213.229:80
